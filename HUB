@@ -55,7 +55,7 @@ _G.AutoPushupV2 = True
 function AutoPushupV2()
 while _G.AutoPushupV2 == true do
        game:GetService("ReplicatedStorage").Remotes.Pushup:FireServer()
-wait(3.5)
+wait(5.5)
 end
 end
 
@@ -77,7 +77,7 @@ _G.AutoSitupV2 = True
 function AutoSitupV2()
 while _G.AutoSitupV2 == true do
        game:GetService("ReplicatedStorage").Remotes.Situp:FireServer()
-wait(3.5)
+wait(5.5)
 end
 end
 
@@ -110,7 +110,7 @@ _G.DumbbellV2 = True
 function DumbbellV2()
 while _G.DumbbellV2 == true do
 game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
-wait(3.5)
+wait(5.5)
 end
 end
 
