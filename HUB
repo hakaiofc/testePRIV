@@ -123,7 +123,7 @@ local ScriptsPRIVTab = Window:MakeTab({
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Auto-Farm"
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "AutoHits",
     Default = false,
     Callback = function(Value)
@@ -140,7 +140,7 @@ local ScriptsPRIVTab = Window:MakeTab({
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-PushUps"
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "AutoPushup",
     Default = false,
     Callback = function(Value)
@@ -148,7 +148,7 @@ JogadorTab:AddToggle({
         AutoPushup()
     end
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "AutoPushupV2",
     Default = false,
     Callback = function(Value)
@@ -165,7 +165,7 @@ local ScriptsPRIVTab = Window:MakeTab({
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Situps"
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "AutoSitup",
     Default = false,
     Callback = function(Value)
@@ -173,7 +173,7 @@ JogadorTab:AddToggle({
         AutoSitup()
     end
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "AutoSitupV2",
     Default = false,
     Callback = function(Value)
@@ -223,7 +223,7 @@ local InfiniteYieldTab = Window:MakeTab({
 local Section = InfiniteYieldTab:AddSection({
     Name = "Infinite-Yield"
 })
-JogadorTab:AddButton({
+InfiniteYieldTab:AddButton({
     Name = "InfiniteYield",
     Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/EdgeIYinfiniteyield/main/mastersource'))()
