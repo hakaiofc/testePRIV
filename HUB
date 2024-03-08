@@ -156,12 +156,6 @@ ScriptsPRIVTab:AddToggle({
         AutoPushupV2()
     end
 })
---ScriptsPRIV
-local ScriptsPRIVTab = Window:MakeTab({
-    Name = "ScriptsPRIV",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Situps"
 })
@@ -180,12 +174,6 @@ ScriptsPRIVTab:AddToggle({
         _G.AutoSitupV2 = Value
         AutoSitupV2()
     end
-})
---ScriptsPRIV
-local ScriptsPRIVTab = Window:MakeTab({
-    Name = "ScriptsPRIV",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
 })
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Pesos"
