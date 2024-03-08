@@ -190,7 +190,7 @@ local ScriptsPRIVTab = Window:MakeTab({
 local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Pesos"
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "BenchToggle",
     Default = false,
     Callback = function(Value)
@@ -198,7 +198,7 @@ JogadorTab:AddToggle({
         BenchToggle()
     end
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "Dumbbell",
     Default = false,
     Callback = function(Value)
@@ -206,7 +206,7 @@ JogadorTab:AddToggle({
         Dumbbell()
     end
 })
-JogadorTab:AddToggle({
+ScriptsPRIVTab:AddToggle({
     Name = "DumbbellV2",
     Default = false,
     Callback = function(Value)
@@ -214,13 +214,13 @@ JogadorTab:AddToggle({
         DumbbellV2()
     end
 })
---ScriptsPRIV
-local ScriptsPRIVTab = Window:MakeTab({
-    Name = "ScriptsPRIV",
+--Infinite-Yield
+local InfiniteYieldTab = Window:MakeTab({
+    Name = "Infinite-Yield",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-local Section = ScriptsPRIVTab:AddSection({
+local Section = InfiniteYieldTab:AddSection({
     Name = "Infinite-Yield"
 })
 JogadorTab:AddButton({
