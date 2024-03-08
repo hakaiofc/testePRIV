@@ -1,0 +1,207 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/hakaiofc/Base/main/HUBORION')))()
+
+--Main Script
+local Window = OrionLib:MakeWindow({Name = "ALBINO PRIV HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = false})
+
+--ANTI AFK 
+pcall(function()
+    local VirtualUser=game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+    warn("anti-afk")
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+       end)
+    end) 
+
+--GLOBALS 
+LP = game.Players.LocalPlayer
+VIM = game:GetService("VirtualInputManager")
+
+--Valor
+_G.AutoHits = True
+
+--Função
+function AutoHits()
+while _G.AutoHits == true do
+local args = {
+    [1] = "Left Punch"
+}
+local args = {
+    [1] = "Right Punch"
+}
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
+Event:FireServer(unpack(args))
+wait()
+end
+end
+
+--Valor
+_G.AutoPushup = True
+
+--Função
+function AutoPushup()
+while _G.AutoPushup == true do
+       game:GetService("ReplicatedStorage").Remotes.Pushup:FireServer()
+wait(0.485)
+end
+end
+
+--Valor
+_G.AutoPushupV2 = True
+
+--Função
+function AutoPushupV2()
+while _G.AutoPushupV2 == true do
+       game:GetService("ReplicatedStorage").Remotes.Pushup:FireServer()
+wait(3.5)
+end
+end
+
+--Valor
+_G.AutoSitup = True
+
+--Função
+function AutoSitup()
+while _G.AutoSitup == true do
+       game:GetService("ReplicatedStorage").Remotes.Situp:FireServer()
+wait(0.485)
+end
+end
+
+--Valor
+_G.AutoSitupV2 = True
+
+--Função
+function AutoSitupV2()
+while _G.AutoSitupV2 == true do
+       game:GetService("ReplicatedStorage").Remotes.Situp:FireServer()
+wait(3.5)
+end
+end
+
+--Valor
+_G.BenchToggle = True
+
+--Função
+function BenchToggle()
+while _G.BenchToggle == true do
+game:GetService("ReplicatedStorage").Remotes.BenchToggle:FireServer()
+wait(0.485)
+end
+end
+
+--Valor
+_G.Dumbbell = True
+
+--Função
+function Dumbbell()
+while _G.Dumbbell == true do
+game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
+wait(0.485)
+end
+end
+
+--Valor
+_G.DumbbellV2 = True
+
+--Função
+function DumbbellV2()
+while _G.DumbbellV2 == true do
+game:GetService("ReplicatedStorage").Remotes.Dumbbell:FireServer()
+wait(3.5)
+end
+end
+
+--ScriptsPRIV
+local ScriptsPRIV = Window:MakeTab({
+    Name = "ScriptsPRIV",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ScriptsPRIV:AddSection({
+    Name = "Script-Strength"
+})
+JogadorTab:AddToggle({
+    Name = "AutoHits",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoHits = Value
+        AutoHits()
+    end
+})
+local Section = ScriptsPRIV:AddSection({
+    Name = "Script-PushUps"
+})
+JogadorTab:AddToggle({
+    Name = "AutoPushup",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoPushup = Value
+        AutoPushup()
+    end
+})
+JogadorTab:AddToggle({
+    Name = "AutoPushupV2",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoPushupV2 = Value
+        AutoPushupV2()
+    end
+})
+local Section = ScriptsPRIV:AddSection({
+    Name = "Script-Situps"
+})
+JogadorTab:AddToggle({
+    Name = "AutoSitup",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoSitup = Value
+        AutoSitup()
+    end
+})
+JogadorTab:AddToggle({
+    Name = "AutoSitupV2",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoSitupV2 = Value
+        AutoSitupV2()
+    end
+})
+local Section = ScriptsPRIV:AddSection({
+    Name = "Script-Pesos"
+})
+JogadorTab:AddToggle({
+    Name = "BenchToggle",
+    Default = false,
+    Callback = function(Value)
+        _G.BenchToggle = Value
+        BenchToggle()
+    end
+})
+JogadorTab:AddToggle({
+    Name = "Dumbbell",
+    Default = false,
+    Callback = function(Value)
+        _G.Dumbbell = Value
+        Dumbbell()
+    end
+})
+JogadorTab:AddToggle({
+    Name = "DumbbellV2",
+    Default = false,
+    Callback = function(Value)
+        _G.DumbbellV2 = Value
+        DumbbellV2()
+    end
+})
+local Section = ScriptsPRIV:AddSection({
+    Name = "Infinite-Yield"
+})
+JogadorTab:AddButton({
+    Name = "InfiniteYield",
+    Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/EdgeIYinfiniteyield/main/mastersource'))()
+    end
+})
