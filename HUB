@@ -129,6 +129,11 @@ ScriptsPRIVTab:AddToggle({
     Callback = function(Value)
         _G.AutoHits = Value
         AutoHits()
+    end
+})
+ScriptsPRIVTab:AddButton({
+    Name = "Auto-Hits",
+    Callback = function()
 local args = {
     [1] = "Left Punch"
 }
@@ -140,12 +145,6 @@ Event:FireServer(unpack(args))
 local Event = game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack")
 Event:FireServer(unpack(args))
 wait()
-    end
-})
-ScriptsPRIVTab:AddButton({
-    Name = "Auto-Hits",
-    Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/EdgeIYinfiniteyield/main/mastersource'))()
     end
 })
 --ScriptsPRIV
