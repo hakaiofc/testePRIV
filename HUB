@@ -115,13 +115,13 @@ end
 end
 
 --ScriptsPRIV
-local ScriptsPRIV = Window:MakeTab({
+local ScriptsPRIVTab = Window:MakeTab({
     Name = "ScriptsPRIV",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-local Section = ScriptsPRIV:AddSection({
-    Name = "Script-Strength"
+local Section = ScriptsPRIVTab:AddSection({
+    Name = "Auto-Farm"
 })
 JogadorTab:AddToggle({
     Name = "AutoHits",
@@ -131,7 +131,13 @@ JogadorTab:AddToggle({
         AutoHits()
     end
 })
-local Section = ScriptsPRIV:AddSection({
+--ScriptsPRIV
+local ScriptsPRIVTab = Window:MakeTab({
+    Name = "ScriptsPRIV",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-PushUps"
 })
 JogadorTab:AddToggle({
@@ -150,7 +156,13 @@ JogadorTab:AddToggle({
         AutoPushupV2()
     end
 })
-local Section = ScriptsPRIV:AddSection({
+--ScriptsPRIV
+local ScriptsPRIVTab = Window:MakeTab({
+    Name = "ScriptsPRIV",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Situps"
 })
 JogadorTab:AddToggle({
@@ -169,7 +181,13 @@ JogadorTab:AddToggle({
         AutoSitupV2()
     end
 })
-local Section = ScriptsPRIV:AddSection({
+--ScriptsPRIV
+local ScriptsPRIVTab = Window:MakeTab({
+    Name = "ScriptsPRIV",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ScriptsPRIVTab:AddSection({
     Name = "Script-Pesos"
 })
 JogadorTab:AddToggle({
@@ -196,7 +214,13 @@ JogadorTab:AddToggle({
         DumbbellV2()
     end
 })
-local Section = ScriptsPRIV:AddSection({
+--ScriptsPRIV
+local ScriptsPRIVTab = Window:MakeTab({
+    Name = "ScriptsPRIV",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ScriptsPRIVTab:AddSection({
     Name = "Infinite-Yield"
 })
 JogadorTab:AddButton({
